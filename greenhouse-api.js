@@ -14,7 +14,7 @@
 jQuery(document).ready(function ($) {
 
     function get_job(job, dep_id, text) {
-        text += '<li class="role" style="list-style-type:none;" id="' + job.id + '">';
+        text += '<li class="roles-team_role" style="list-style-type:none;" id="' + job.id + '">';
         text += '<a href="' + job.absolute_url + '" target="_blank"><h3>' + job.title + '</h3></a>';
         text += '<div class="role-location">' + job.location.name + '</div>';
         text += '</li>';
