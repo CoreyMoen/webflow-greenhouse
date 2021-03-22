@@ -59,7 +59,7 @@ jQuery(document).ready(function ($) {
             success: function (deps) {
                 var text = '';
                 var select = '<select class="input cc-select u-w-100"><option value="all" selected>All Teams</option>';
-                text += '<ul id="departments">';
+                text += '<ul class="roles-team_wrapper">';
                 $.each(deps.departments, function (index, dep) {
                     select = build_select_of_departments(dep, select);
                     if (dep.jobs.length) {
@@ -69,7 +69,7 @@ jQuery(document).ready(function ($) {
                 text += '</ul>';
                 select += '</select>';
                 $('.roles-select-wrapper').empty().append(select);
-                $('.greenhouse-wrapper').append(text).find('#departments').fadeOut(0).fadeIn();
+                $('.greenhouse-wrapper').append(text).find('.roles-team_wrapper').fadeOut(0).fadeIn();
             }
         });
     }
@@ -103,7 +103,7 @@ jQuery(document).ready(function ($) {
                 dataType: 'jsonp',
                 success: function (dep) {
                     var text = get_department(dep, '');
-                    $('#departments').empty().append(text).fadeOut(0).fadeIn(200);
+                    $('.roles-team_wrapper').empty().append(text).fadeOut(0).fadeIn(200);
                 }
             });
         } else {
