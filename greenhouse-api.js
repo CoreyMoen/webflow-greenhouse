@@ -80,7 +80,7 @@ jQuery(document).ready(function ($) {
         get_all_jobs();
     } else {
         var dim = '<div id="wait" style="width: 100%; height: 100%; position: fixed; top: 0; z-index: 9000">';
-        dim += '<img src="http://www.workfront.com/wp-content/themes/dragons/images/ajax_loader_gray_32.gif" style="position: fixed; margin: auto; left: 0; right: 0; top: 0; bottom: 0"/>';
+        dim += '<img src="https://uploads-ssl.webflow.com/6052550fea8cd32aedd21459/6058e4858d298d0a1eed2a12_Ellipsis-2.6s-194px.gif" style="position: fixed; margin: auto; left: 0; right: 0; top: 0; bottom: 0"/>';
         dim += '</div>';
         console.log('has gh_id');
         $('body').append(dim).find('#wait').fadeOut(0).fadeIn(100);
