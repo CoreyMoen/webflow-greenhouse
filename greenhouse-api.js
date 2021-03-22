@@ -58,7 +58,7 @@ jQuery(document).ready(function ($) {
             dataType: 'jsonp',
             success: function (deps) {
                 var text = '';
-                var select = '<div class="roles-select-wrapper"><select class="input cc-select u-w-100"><option value="all" selected>All Teams</option>';
+                var select = '<div class="roles-select-wrapper"><label for="team" class="sr-only">Team</label><select class="input cc-select u-w-100" name="team"><option value="all" selected>All Teams</option>';
                 text += '<ul id="departments">';
                 $.each(deps.departments, function (index, dep) {
                     select = build_select_of_departments(dep, select);
