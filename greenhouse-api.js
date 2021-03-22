@@ -23,7 +23,7 @@ jQuery(document).ready(function ($) {
 
     function get_department(dep, text, short) {
         if (!short) {
-            text += '<li class="team" id="' + dep.id + '">';
+            text += '<li class="roles-team" id="' + dep.id + '">';
             text += '<h2>' + dep.name + '</h2>';
         }
         text += '<ul class="role-list">';
