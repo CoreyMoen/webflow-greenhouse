@@ -68,7 +68,7 @@ jQuery(document).ready(function ($) {
                 });
                 text += '</ul>';
                 select += '</select>';
-                $('.greenhouse-wrapper').empty().append(select);
+                $('.roles-select-wrapper').empty().append(select);
                 $('.greenhouse-wrapper').append(text).find('#departments').fadeOut(0).fadeIn();
             }
         });
