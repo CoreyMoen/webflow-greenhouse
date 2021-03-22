@@ -58,7 +58,7 @@ jQuery(document).ready(function ($) {
             dataType: 'jsonp',
             success: function (deps) {
                 var text = '';
-                var select = '<select class="input cc-select u-w-100"><option value="all" selected>All Teams</option>';
+                var select = '<div class="roles-select-wrapper"><select class="input cc-select u-w-100"><option value="all" selected>All Teams</option>';
                 text += '<ul id="departments">';
                 $.each(deps.departments, function (index, dep) {
                     select = build_select_of_departments(dep, select);
@@ -67,8 +67,8 @@ jQuery(document).ready(function ($) {
                     }
                 });
                 text += '</ul>';
-                select += '</select>';
-                $('.roles-select-wrapper').empty().append(select);
+                select += '</select></div>';
+                $('.greenhouse-wrapper').empty().append(select);
                 $('.greenhouse-wrapper').append(text).find('#departments').fadeOut(0).fadeIn();
             }
         });
