@@ -26,7 +26,7 @@ jQuery(document).ready(function ($) {
             text += '<li class="roles-team" id="' + dep.id + '">';
             text += '<div class="roles-team_title"><h2 class="h3">' + dep.name + '</h2></div>';
         }
-        text += '<ul class="role-list">';
+        text += '<ul class="roles-team_role-wrapper">';
         if (dep.jobs.length) {
             $.each(dep.jobs, function (index, job) {
                 text = get_job(job, dep.id, text);
